@@ -15,14 +15,26 @@ java {
 
 repositories {
     mavenCentral()
+
 }
+
+
+
+dependencyManagement {
+    imports {
+        mavenBom "org.apache.camel.springboot:camel-spring-boot-bom:4.19.0"
+    }
+}
+
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 
     implementation("org.apache.camel.springboot:camel-spring-boot-starter:4.19.0")
     implementation("org.apache.camel.springboot:camel-lra-starter:4.19.0")
-
+    implementation("org.apache.camel.springboot:camel-undertow-starter:4.19.0")
+    implementation "org.apache.camel.springboot:camel-saga-starter:4.19.0"
+    implementation "org.apache.camel.springboot:camel-jdbc-starter:4.19.0"
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
