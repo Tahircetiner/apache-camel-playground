@@ -16,11 +16,11 @@ public class OrchestratorController {
 		this.producerTemplate = producerTemplate;
 	}
 
-	@PostMapping("")
-	public ResponseEntity<String> startSaga(@RequestBody Map<String, Object> payload) {
+	@PostMapping()
+	public ResponseEntity<String> startSaga() {
 		producerTemplate.sendBody(
 			"direct:startSaga",
-			payload
+			"payload=" + "test"
 		);
 
 		return ResponseEntity.accepted()

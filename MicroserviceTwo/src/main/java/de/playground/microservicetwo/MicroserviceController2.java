@@ -13,8 +13,8 @@ import java.util.Map;
 public class MicroserviceController2 {
 
 
-	@PostMapping("")
-	public ResponseEntity<String> startMicroservice2(@RequestBody Map<String, Object> payload) {
+	@PostMapping
+	public ResponseEntity<String> startMicroservice2() {
 
 		return ResponseEntity.accepted()
 			.body("Microservice transaction 2 completed successfully");

@@ -1,11 +1,13 @@
 spring:
   application:
-    name: apache-camel-playground   # frei wählbar
+    name: saga-client
 
 camel:
     lra:
       coordinator-url: http://localhost:8090
       local-participant-url: http://localhost:8087
+
+
 
 server:
   port: 8087

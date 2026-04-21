@@ -10,8 +10,8 @@ import java.util.Map;
 public class MicroserviceController1 {
 
 
-	@PostMapping("")
-	public ResponseEntity<String> startMicroservice1(@RequestBody Map<String, Object> payload) {
+	@PostMapping
+	public ResponseEntity<String> startMicroservice1() {
 
 		return ResponseEntity.accepted()
 			.body("Microservice transaction 1 completed successfully");
