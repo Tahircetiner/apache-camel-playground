@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: apache-camel-playground   # frei wählbar
+
+camel:
+    lra:
+      coordinator-url: http://localhost:8090
+      local-participant-url: http://localhost:8087
+
+server:
+  port: 8087
