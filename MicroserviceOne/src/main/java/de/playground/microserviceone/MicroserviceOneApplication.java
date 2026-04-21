@@ -1,13 +1,13 @@
-package de.playground;
+package de.playground.microserviceone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApacheCamelPlaygroundApplication {
+public class MicroserviceOneApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApacheCamelPlaygroundApplication.class, args);
+        SpringApplication.run(MicroserviceOneApplication.class, args);
     }
 
 }

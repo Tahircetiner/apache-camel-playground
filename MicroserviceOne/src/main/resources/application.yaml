@@ -8,4 +8,4 @@ camel:
       local-participant-url: http://localhost:8087
 
 server:
-  port: 8087
+  port: 8088
