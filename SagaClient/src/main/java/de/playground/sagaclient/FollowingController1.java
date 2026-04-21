@@ -1,8 +1,6 @@
-package de.playground;
+package de.playground.sagaclient;
 
-import org.apache.camel.ProducerTemplate;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;

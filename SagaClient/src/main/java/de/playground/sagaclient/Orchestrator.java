@@ -1,4 +1,4 @@
-package de.playground;
+package de.playground.sagaclient;
 
 
 import org.apache.camel.builder.RouteBuilder;

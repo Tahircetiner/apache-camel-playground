@@ -1,13 +1,13 @@
-package de.playground;
+package de.playground.sagaclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApacheCamelPlaygroundApplication {
+public class SagaClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApacheCamelPlaygroundApplication.class, args);
+        SpringApplication.run(SagaClientApplication.class, args);
     }
 
 }
