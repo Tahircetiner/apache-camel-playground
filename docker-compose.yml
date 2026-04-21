@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8087:8080"
+    depends_on:
+      - lra-coordinator
+    environment:
+      CAMEL_SAGA_LRA_COORDINATOR_URL: http://lra-coordinator:8080
+      CAMEL_SAGA_LRA_LOCAL_PARTICIPANT_URL: http://app:8080
+
+  lra-coordinator:
+    image: quay.io/jbosstm/lra-coordinator
+    ports:
+      - "8090:8080"
