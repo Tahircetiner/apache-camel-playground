@@ -1,13 +1,13 @@
-package de.playground;
+package de.playground.microservicetwo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApacheCamelPlaygroundApplication {
+public class MicroserviceTwoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApacheCamelPlaygroundApplication.class, args);
+        SpringApplication.run(MicroserviceTwoApplication.class, args);
     }
 
 }
