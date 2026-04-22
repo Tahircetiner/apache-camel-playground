@@ -36,6 +36,8 @@ dependencies {
     implementation "org.apache.camel.springboot:camel-http-starter:4.19.0"
     implementation "org.apache.camel.springboot:camel-saga-starter:4.19.0"
     implementation "org.apache.camel.springboot:camel-jdbc-starter:4.19.0"
+    // Source: https://mvnrepository.com/artifact/org.apache.camel/camel-resilience4j
+    implementation("org.apache.camel:camel-resilience4j:4.19.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

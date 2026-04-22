@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.apache.camel.CamelContext;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 
 @Configuration
 public class SagaConfig {
@@ -26,5 +29,9 @@ public class SagaConfig {
 		return sagaService;
 	}
 
+	@Bean(name = "bulkheadThreadPool")
+	public ExecutorService bulkheadThreadPool() {
+		return Executors.newFixedThreadPool(5);
+	}
 
 }
